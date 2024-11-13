@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 originalScale;
 
-    public int score = 0;
+    public int score;
+
     public TextMeshProUGUI scoreText;
 
 
@@ -44,10 +45,13 @@ public class PlayerController : MonoBehaviour
 
         originalScale = transform.localScale;
 
+        score = 0;
+
+        DontDestroyOnLoad(transform.gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+// Update is called once per frame
+void Update()
     {
         
 

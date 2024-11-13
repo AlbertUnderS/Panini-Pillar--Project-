@@ -64,6 +64,7 @@
     <Compile Include="Assets\scripts\Rank.cs" />
     <Compile Include="Assets\scripts\WallBomb.cs" />
     <Compile Include="Assets\scripts\Collectable.cs" />
+    <Compile Include="Assets\scripts\CameraFollow.cs" />
     <Compile Include="Assets\scripts\PizzaPortal.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />
   </ItemGroup>

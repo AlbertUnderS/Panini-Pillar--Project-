@@ -90,10 +90,6 @@ void Update()
         {
             animator.SetInteger("machState", 0);
         }
-        //if (!isCarrying)
-        //{
-
-
 
             if (Input.GetKey(KeyCode.W))
             {
@@ -114,17 +110,6 @@ void Update()
                 animator.SetBool("UC", false);
 
             }
-        /*
-                    if (Input.GetKey(KeyCode.D))
-                    {
-                        if (Input.GetKeyDown(KeyCode.J))
-                        {
-                            rigidbody.velocity = Vector3.zero;
-                            rigidbody.AddForce(new Vector2(Mathf.Sqrt(-2 * Physics2D.gravity.y * 5000), 0), ForceMode2D.Impulse);
-                        }
-
-                    }
-                    */
 
 
         if (Input.GetKey(KeyCode.J))
@@ -161,16 +146,7 @@ void Update()
                 animator.SetBool("GP", false);
 
             }
-            /*
-            if (Input.GetKey(KeyCode.A))
-            {
-                if (Input.GetKeyDown(KeyCode.J))
-                {
-                    rigidbody.velocity = Vector3.zero;
-                    rigidbody.AddForce(new Vector2(-(Mathf.Sqrt(-2 * Physics2D.gravity.y * 5000)), 0), ForceMode2D.Impulse);
-                }
 
-            }*/
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 animator.SetBool("mach?", true);
@@ -201,7 +177,6 @@ void Update()
 
             }
 
-       // }
         RaycastHit2D wall = Physics2D.Raycast(position, new Vector2(direction, 0), 1, LayerMask.GetMask("WallFloor"));
         if (wall.collider != null)
         {
@@ -269,9 +244,6 @@ void Update()
     }
 
 
-
-
-
     private void TryPickUpObject()
     {
         // Find all colliders within the pickup range
@@ -301,8 +273,6 @@ void Update()
             isCarrying = false;
         }
     }
-
-
 
         private void FlipObject()
         {

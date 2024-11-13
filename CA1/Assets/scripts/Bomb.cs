@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
+
+    public AudioClip Explode;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,7 @@ public class Bomb : MonoBehaviour
         if (collision.gameObject.CompareTag("bombWall"))
         {
             // Destroy this game object to make it disappear
+            AudioSource.PlayClipAtPoint(Explode, transform.position, 500000000000);
             Destroy(gameObject);
         }
     }

@@ -11,8 +11,6 @@ public class Timer : MonoBehaviour
     public float currentTime;
     public float startingTime = 120f;
     public PlayerController playerController;
-
-    //[SerializeField] Text ;
     void Start()
     {
         currentTime = startingTime;

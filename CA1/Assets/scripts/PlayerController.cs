@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 originalScale;
 
-    private int score = 0;
+    public int score = 0;
     public TextMeshProUGUI scoreText;
 
 

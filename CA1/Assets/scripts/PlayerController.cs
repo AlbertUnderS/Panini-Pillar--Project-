@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         rigidbody = GetComponent<Rigidbody2D>();
         isGrounded = true;
         direction = 1;
@@ -242,6 +243,12 @@ void Update()
             objectToCarry.position = (Vector2)transform.position + carryOffset;
         }
 
+        if (isCarrying && objectToCarry == null)
+        {
+            // If the object was destroyed, reset the carrying state
+            isCarrying = false;
+        }
+
         FlipObject();
     }
 
@@ -262,7 +269,7 @@ void Update()
         {
             // Teleport the player (or object with this script) to the specified location
             transform.position = teleportLocation;
-
+            IncreaseScore(100);
             // Optional: Add an effect, sound, or visual feedback if needed
             Debug.Log("Teleported to location: " + teleportLocation);
         }
@@ -295,7 +302,6 @@ void Update()
     {
         if (objectToCarry != null)
         {
-
             // Clear the carried object and reset carrying state
             objectToCarry = null;
             isCarrying = false;

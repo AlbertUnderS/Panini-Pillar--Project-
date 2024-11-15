@@ -22,10 +22,10 @@ Credits:
 All Sound Effects were taken from the game "Pizza Tower" by Tour de Pizza, 
 
 All Song Credits:
-Taragon Pizza - ClassyJito - Pizza Tower
-Pest Anchovy - ClassyJito - Pizza Tower
-Results! - PaperKitty - Sugary Spire
+Taragon Pizza - ClassyJito - Pizza Tower,
+Pest Anchovy - ClassyJito - Pizza Tower,
+Results! - PaperKitty - Sugary Spire.
 
-Logo drawn by me
+Logo, Bombs and Panini Walls drawn by me
 
-All sprites, aside from the logo, Are also from "Pizza Tower" and were ripped directly from The Spriters Resource (https://www.spriters-resource.com/pc_computer/pizzatower/)
+All sprites, aside from the above mentioned, Are also from "Pizza Tower" and were ripped directly from The Spriters Resource (https://www.spriters-resource.com/pc_computer/pizzatower/)

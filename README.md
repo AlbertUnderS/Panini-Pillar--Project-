@@ -16,6 +16,7 @@ HOW TO OPEN PROJECT:
 Or you could just play the final build in the releases tab...
 
 
+VIDEO PRESENTATION : https://youtu.be/jGlegp8dh7M
 
 
 Credits:
